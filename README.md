@@ -4,22 +4,31 @@
 
 [Open Streamlit App](https://job-market-analyzer0909.streamlit.app/)
 
----
-
 ## Overview
-This project analyzes job market trends using data science techniques.  
-The analysis focuses on salary distribution, remote work trends, experience levels, and top job roles in the data industry.
+
+This project is an interactive Job Market Analysis Dashboard built using Python and Streamlit.  
+It analyzes job market trends such as salary distribution, experience levels, remote work patterns, and top job roles in the data industry.
+
+The application allows users to upload any CSV dataset and automatically perform:
+- Data cleaning
+- Exploratory Data Analysis (EDA)
+- Statistical summaries
+- Correlation analysis
+- Smart visualizations
+
+The dashboard is fully interactive and deployed online using Streamlit Cloud.
 
 ---
 
 ## Technologies Used
+
 - Python
+- Streamlit
 - Pandas
 - NumPy
 - Matplotlib
 - Jupyter Notebook
-
----
+- Git & GitHub
 
 ## Dataset
 The dataset contains job-related information such as:
