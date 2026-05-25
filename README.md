@@ -1,5 +1,11 @@
 # Job Market Analysis Project
 
+## Live Demo
+
+[Open Streamlit App](https://job-market-analyzer0909.streamlit.app/)
+
+---
+
 ## Overview
 This project analyzes job market trends using data science techniques.  
 The analysis focuses on salary distribution, remote work trends, experience levels, and top job roles in the data industry.
@@ -60,6 +66,29 @@ report/        -> Final project report
 
 ### Top Job Roles
 ![Top Roles](visuals/top_roles.png)
+
+## Interactive Dashboard
+
+The project also includes a Streamlit-based interactive dashboard where users can:
+
+- Upload CSV datasets
+- Perform automatic data analysis
+- Detect missing values
+- Generate smart visualizations
+- View correlation heatmaps
+- Download processed datasets
+
+---
+
+## Application Preview
+
+Add dashboard screenshot here.
+
+```markdown
+![Dashboard](screenshots/dashboard.png)
+```
+
+
 
 ## How to Run
 
