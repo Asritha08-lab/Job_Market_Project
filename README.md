@@ -50,6 +50,17 @@ report/        -> Final project report
 
 ---
 
+## Visualizations
+
+### Salary by Experience Level
+![Salary Chart](visuals/Salary_by_Experience_Level.png)
+
+### Remote Work Distribution
+![Remote Work](visuals/remote_jobs.png)
+
+### Top Job Roles
+![Top Roles](visuals/top_roles.png)
+
 ## How to Run
 
 1. Clone the repository
