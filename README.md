@@ -82,12 +82,7 @@ The project also includes a Streamlit-based interactive dashboard where users ca
 
 ## Application Preview
 
-Add dashboard screenshot here.
-
-```markdown
 ![Dashboard](screenshots/dashboard.png)
-```
-
 
 
 ## How to Run
