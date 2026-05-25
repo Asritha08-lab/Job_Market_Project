@@ -11,7 +11,7 @@ st.set_page_config(
 
 # ---------------- TITLE ---------------- #
 
-st.title("📊 Universal Data Analyzer")
+st.title("Universal Data Analyzer")
 
 st.write(
     "Upload any CSV file and automatically analyze the dataset."
@@ -20,7 +20,7 @@ st.write(
 # ---------------- FILE UPLOAD ---------------- #
 
 uploaded_file = st.file_uploader(
-    "📁 Upload CSV File",
+    "Upload CSV File",
     type=["csv"]
 )
 
@@ -69,7 +69,7 @@ if uploaded_file is not None:
 
     # ---------------- METRICS ---------------- #
 
-    st.subheader("📌 Dataset Overview")
+    st.subheader("Dataset Overview")
 
     col1, col2, col3 = st.columns(3)
 
@@ -80,30 +80,30 @@ if uploaded_file is not None:
     # ---------------- TABS ---------------- #
 
     tab1, tab2, tab3, tab4 = st.tabs([
-        "📄 Preview",
-        "📊 Statistics",
-        "📈 Visualization",
-        "🔥 Correlation"
+        "Preview",
+        "Statistics",
+        "Visualization",
+        "Correlation"
     ])
 
     # ---------------- TAB 1 ---------------- #
 
     with tab1:
 
-        st.subheader("🧹 Data Cleaning Summary")
+        st.subheader("Data Cleaning Summary")
 
         for step in cleaning_steps:
             st.success(step)
 
-        st.subheader("📄 Dataset Preview")
+        st.subheader("Dataset Preview")
 
         st.dataframe(df.head(20))
 
-        st.subheader("📌 Data Types")
+        st.subheader("Data Types")
 
         st.write(df.dtypes)
 
-        st.subheader("❌ Missing Values")
+        st.subheader("Missing Values")
 
         st.write(df.isnull().sum())
 
@@ -111,7 +111,7 @@ if uploaded_file is not None:
 
     with tab2:
 
-        st.subheader("📊 Statistical Summary")
+        st.subheader("Statistical Summary")
 
         st.write(df.describe())
 
@@ -119,7 +119,7 @@ if uploaded_file is not None:
 
     with tab3:
 
-        st.subheader("📈 Smart Visualization")
+        st.subheader("Smart Visualization")
 
         # Numeric columns excluding unnamed
         numeric_columns = [
@@ -166,7 +166,7 @@ if uploaded_file is not None:
 
     with tab4:
 
-        st.subheader("🔥 Correlation Heatmap")
+        st.subheader("Correlation Heatmap")
 
         correlation = df.select_dtypes(
             include=['number']
@@ -196,7 +196,7 @@ if uploaded_file is not None:
 
     # ---------------- DOWNLOAD BUTTON ---------------- #
 
-    st.subheader("📥 Download Dataset")
+    st.subheader("Download Dataset")
 
     csv = df.to_csv(index=False).encode('utf-8')
 
